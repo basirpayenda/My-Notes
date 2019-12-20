@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/lightgallery.min.css" />
+    <link rel="stylesheet" href="dist/css/lg-transitions.min.css" />
+    <link rel="stylesheet" href="dist/css/index.css" />
+  </head>
+  <body>
+    <div id="gallery-row">
+      <div class="column">
+        <a class="item" href="images/pic01.jpg">
+          <div class="img-wrapper">
+            <img src="images/pic01.jpg" />
+          </div>
+        </a>
+        <a class="item" href="images/pic02.jpg">
+          <img src="images/pic02.jpg" />
+        </a>
+        <a class="item" href="images/pic03.jpg">
+          <img src="images/pic03.jpg" />
+        </a>
+      </div>
+      <div class="column">
+        <a class="item" href="images/pic06.jpg">
+          <img src="images/pic06.jpg" />
+        </a>
+        <a class="item" href="images/pic09.jpg">
+          <img src="images/pic09.jpg" />
+        </a>
+        <a class="item" href="images/pic07.jpg">
+          <img src="images/pic07.jpg" />
+        </a>
+      </div>
+      <div class="column">
+        <a class="item" href="images/pic12.jpg">
+          <img src="images/pic12.jpg" />
+        </a>
+        <a class="item" href="images/pic13.jpg">
+          <img src="images/pic13.jpg" />
+        </a>
+        <a class="item" href="images/pic14.jpg">
+          <img src="images/pic14.jpg" />
+        </a>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+    <script src="dist/js/lightgallery.min.js"></script>
+    <script src="dist/js/lightgallery-all.min.js"></script>
+    <script src="js/lg-fullscreen.min.js"></script>
+    <script src="js/lg-thumbnail.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#gallery-row").lightGallery({
+          selector: ".item",
+          mode: "lg-tube",
+          thumbnail: true
+        });
+      });
+    </script>
+  </body>
+</html>
