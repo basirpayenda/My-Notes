@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8 
+  <body>
+    <div class="container">
+      <p>This is an <span id="typed"></span> website.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+    <script>
+      var typed = new Typed("#typed", {
+        /**
+         * @property {array} strings strings to be typed
+         * @property {string} stringsElement ID of element containing string children
+         */
+        strings: [
+          "awesome",
+          "awesome interesting",
+          "lovely",
+          "lovely sarcastic ^5000" // ^5000 waits 5000 secs after completion to next start
+        ],
+
+        stringsElement: "#elem",
+        typeSpeed: 20,
+        startDelay: 1500, // startDelay time before typing starts in milliseconds
+        backSpeed: 20, // backspace speed
+
+        // smartBackspace only backspace what doesn't match the previous string
+        smartBackspace: true,
+
+        // time before backspacing in milliseconds
+        backDelay: 1000,
+
+        loop: true,
+        loopCount: Infinity,
+
+        /**
+         {boolean} showCursor show cursor
+         {string} cursorChar character for cursor
+         {boolean} autoInsertCss insert CSS for cursor and fadeOut into HTML <head>
+         */
+        showCursor: true,
+        cursorChar: "|",
+        autoInsertCss: true,
+
+        /**
+         * @property {string} attr attribute for typing
+         * Ex: input placeholder, value, or just HTML text
+         */
+        attr: null
+      });
+    </script>
+  </body>
+</html>
